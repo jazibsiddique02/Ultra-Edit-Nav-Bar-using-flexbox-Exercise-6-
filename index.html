@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar Using flexbox</title>
+</head>
+
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+
+    }
+
+
+    /* Main container for the navbar */
+    .container {
+        display: flex;
+        justify-content: space-around;
+        /* Align items at start and end */
+        align-items: centre;
+        /* Center items vertically */
+        height: 60px;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 0 20px;
+        /* Add padding horizontally */
+    }
+
+
+
+    .items {
+        display: flex;
+        gap: 20px;
+        padding-top: 3px;
+        position: relative;
+        right: 5%;
+
+    }
+
+    /* Navbar item styles */
+    .items item {
+        padding: 20px;
+        /* Adjust padding for each item */
+        border-radius: 5px;
+        /* Add rounded corners */
+        background-color: lightgray;
+        /* Add background color */
+    }
+
+
+
+
+
+
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+
+    .subcontainer {
+        display: flex;
+        margin: 3px;
+        margin-left: 20px;
+    }
+
+
+
+
+
+    .main-text {
+        font-size: 20px;
+
+        font-weight: bolder;
+        margin-left: 20px;
+        margin-top: 22px;
+        line-height: 1px;
+    }
+
+
+    .sub-text {
+        font-size: 4px;
+
+
+    }
+
+
+    .logo {
+        display: flex;
+        width: 85px;
+        flex-flow: wrap;
+        flex-direction: row-reverse;
+    }
+
+    .security>a {
+        position: relative;
+        top: -5px;
+
+    }
+</style>
+
+
+<body>
+
+
+
+
+    <div class="container">
+        <div class="subcontainer">
+            <img src="NavBar Logo.png " height="50px" width="50px" alt="UltraEdit Logo">
+            <div class="logo">
+                <span class="main-text">Ultraedit </span>
+                <br>
+                <span class="sub-text">An idea, Inc. Company</span>
+
+            </div>
+
+        </div>
+
+
+        <div class="items">
+            <item><a href="/">Products v</a></item>
+            <item><a href="/">Pricing v</a></item>
+            <item><a href="/">Resources v</a></item>
+            <item><a href="/">About Us v</a></item>
+            <item class="security">
+                <a href="/">Security and Compliance</a>
+                <img src="pic.png" width="20px" height="20px" alt="small logo" class="pic2">
+            </item>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
